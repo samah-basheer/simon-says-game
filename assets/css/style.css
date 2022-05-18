@@ -1,16 +1,27 @@
 * {
     box-sizing: border-box;
 }
+@font-face {
+    font-family: "ARCADECLASSIC";
+    src: url(../fonts/ARCADECLASSIC.TTF);
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "ARCADECLASSIC";
+}
+h1 {
+    color: #fdf0c1;
+    font-size: 4vw;
+    text-align: center;
+    letter-spacing: 4px;
+}
 .game {
     background-color: #021f3f;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-body {
-    padding: 0;
-    margin: 0;
 }
 .container {
     max-width: 900px;
@@ -25,11 +36,8 @@ body {
     height: 14vw;
     cursor: pointer;
     margin: 12px;
-    border: 6px solid #000000;
+    border: 8px solid #000000;
     border-radius: 24%;
-}
-.card:hover {
-    border: 1px solid #333;
 }
 .red {
     background-color: red;
