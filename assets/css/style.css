@@ -15,6 +15,7 @@ h1 {
     font-size: 4vw;
     text-align: center;
     letter-spacing: 4px;
+    word-spacing: 10px;
 }
 .game {
     background-color: #021f3f;
