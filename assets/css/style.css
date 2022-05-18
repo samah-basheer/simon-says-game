@@ -61,3 +61,26 @@ h1 {
         height: 20vw;
     }
 }
+.red.activated, .red:active {
+    box-shadow: 0 0 0 1px #ff5c36 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
+    background-color: #ff5c36;
+    transform: translateY(10px);
+}
+.green.activated, .green:active {
+    box-shadow: 0 0 0 1px #a0ea00 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
+    background-color: #a0ea00;
+    transform: translateY(10px);
+}
+.yellow.activated, .yellow:active {
+    box-shadow: 0 0 0 1px #ffca3d inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
+    background-color: #ffca3d;
+    transform: translateY(10px);
+}
+.blue.activated, .blue:active {
+    box-shadow: 0 0 0 1px #2bbcff inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
+    background-color: #2bbcff;
+    transform: translateY(10px);
+}
+.unclickable {
+    pointer-events: none;
+}
