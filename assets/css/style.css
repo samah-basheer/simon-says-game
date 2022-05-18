@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.row {
+    text-align: center;
+}
+.card {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: #eee;
+    cursor: pointer;
+}
+.card:hover {
+    border: 1px solid #333;
+}
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+.blue {
+    background-color: blue;
+}
+.yellow {
+    background-color: yellow;
+}
