@@ -1,8 +1,12 @@
 * {
     box-sizing: border-box;
 }
-h1 {
-    text-align: center;
+.game {
+    background-color: #021f3f;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 body {
     padding: 0;
@@ -17,10 +21,12 @@ body {
 }
 .card {
     display: inline-block;
-    width: 100px;
-    height: 100px;
-    background: #eee;
+    width: 14vw;
+    height: 14vw;
     cursor: pointer;
+    margin: 12px;
+    border: 6px solid #000000;
+    border-radius: 24%;
 }
 .card:hover {
     border: 1px solid #333;
@@ -36,4 +42,10 @@ body {
 }
 .yellow {
     background-color: yellow;
+}
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 20vw;
+        height: 20vw;
+    }
 }
