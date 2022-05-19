@@ -30,9 +30,11 @@ function activateTile(color) {
 
 function playRound(nextSequence) {
     nextSequence.forEach((color, index) => {
-        setTimeout(() => {
-            activateTile(color);
-        }, (index + 1) * 600);
+        if(index == nextSequence.length - 1) {
+            setTimeout(() => {
+                activateTile(color);
+            }, (index + 1) * 600);
+        }
     });
 }
 
@@ -82,7 +84,7 @@ function handleClick(tile) {
         humanSequence = [];
         setTimeout(() => {
             nextRound();
-        }, 1000);
+        }, 500);
         return;
     }
 }
