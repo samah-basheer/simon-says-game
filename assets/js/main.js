@@ -45,7 +45,7 @@ function nextStep() {
     return random;
 }
 
-function nextRound() {
+function startRound() {
     level += 1;
 
     tileContainer.classList.add('unclickable');
@@ -83,17 +83,13 @@ function handleClick(tile) {
         }
         humanSequence = [];
         setTimeout(() => {
-            nextRound();
+            startRound();
         }, 500);
         return;
     }
 }
 
-function startGame() {
-    info.textContent = `Level ${level}`;
-    nextRound();
-}
-document.addEventListener('keypress', startGame);
+document.addEventListener('keypress', startRound);
 
 tileContainer.addEventListener('click', event => {
     const { tile } = event.target.dataset;
