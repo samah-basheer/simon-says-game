@@ -47,13 +47,13 @@ function nextStep() {
 
 function startRound() {
     level += 1;
+    info.textContent = `Level ${level}`;
 
     tileContainer.classList.add('unclickable');
 
     // copy all the elements in the `sequence` array to `nextSequence`
     const nextSequence = [...sequence];
     nextSequence.push(nextStep());
-    info.textContent = `Level ${level}`;
     playRound(nextSequence);
 
     sequence = [...nextSequence];
